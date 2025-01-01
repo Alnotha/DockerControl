@@ -1,0 +1,13 @@
+http://3.80.162.107:80
+http://3.80.162.107:81
+http://3.80.162.107:82
+http://3.80.162.107:83
+http://3.80.162.107:84
+
+All the IP Above should give copy of the website. 
+
+Steps to run Code:
+docker-compose build
+docker-compose up -d
+    - the -d allows for applicaion to run in the background. 
+

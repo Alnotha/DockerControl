@@ -25,3 +25,48 @@ services:
     image: my-nginx-container
     ports:
       - "84:80"
+
+  ser6:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index1.html:/usr/share/nginx/html/index.html
+    ports:
+      - "85:80"
+
+  ser7:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index2.html:/usr/share/nginx/html/index.html
+    ports:
+      - "86:80"
+
+  ser8:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index3.html:/usr/share/nginx/html/index.html
+    ports:
+      - "87:80"
+
+  ser9:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index4.html:/usr/share/nginx/html/index.html
+    ports:
+      - "88:80"
+
+  ser10:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index5.html:/usr/share/nginx/html/index.html
+    ports:
+      - "89:80"
