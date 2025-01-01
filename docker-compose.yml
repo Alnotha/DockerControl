@@ -2,27 +2,47 @@ version: '3.9'
 
 services:
   ser1:
-    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
     ports:
       - "80:80"
 
   ser2:
-    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
     ports:
       - "81:80"
 
   ser3:
-    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
     ports:
       - "82:80"
 
   ser4:
-    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
     ports:
       - "83:80"
 
   ser5:
-    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
     ports:
       - "84:80"
 
