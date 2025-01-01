@@ -7,8 +7,14 @@ http://3.80.162.107:84
 All the IP Above should give copy of the website. 
 
 Steps to run Code:
-docker-compose down --rmi all --volumes --remove-orphans 
 docker-compose build
 docker-compose up -d
     - the -d allows for applicaion to run in the background. 
 
+Step to Stop Code
+docker-compose down --rmi all --volumes --remove-orphans 
+
+Git Push/Pull
+git fetch origin
+git reset --hard origin/main
+git clean -fd
