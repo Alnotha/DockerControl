@@ -51,7 +51,7 @@ services:
     volumes:
       - ./index3.html:/usr/share/nginx/html/index.html
     ports:
-      - "87:80"
+      - "88:80"
 
   ser9:
     build:
@@ -60,7 +60,7 @@ services:
     volumes:
       - ./index4.html:/usr/share/nginx/html/index.html
     ports:
-      - "88:80"
+      - "89:80"
 
   ser10:
     build:
